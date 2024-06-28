@@ -1,0 +1,39 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+    height: 60px;
+    width: 100vw;
+}
+
+.Brand {
+    margin-left: -20vw;
+    width: 30vw;
+    color: rgb(219, 82, 24);
+    text-decoration: inherit;
+    font-size: larger;
+}
+
+.Tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+.Link {
+    color: white;
+    text-decoration: inherit;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  

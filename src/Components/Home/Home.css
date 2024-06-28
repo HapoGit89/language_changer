@@ -1,0 +1,10 @@
+.Home {
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: larger;
+    margin-top: 35vh;
+    text-shadow: 4px 4px 4px 4px;
+}
