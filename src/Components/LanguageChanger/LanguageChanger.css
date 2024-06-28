@@ -1,18 +1,21 @@
 .LanguageChanger {
-     
-        width: 100px;
-        height: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 Button {
     border-radius: 2px;
-    border-color: rgb(204, 78, 11);
+    border-color: black;
     background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
+}
+
+.act {
+    background-color: rgb(204, 78, 11); ;
 }

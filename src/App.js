@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import MyNavBar from './Components/MyNavBar/MyNavBar.js'
 import Home from './Components/Home/Home';
@@ -10,16 +9,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
-
-  const [lang, setLang] = useState("ENG")
+  const [lang, setLang] = useState("ENG")  // state holds language choice
 
   useEffect(function getLang(){
-    if (localStorage.getItem("lang")){
-      console.log(localStorage.getItem("lang"))
-        setLang(localStorage.getItem("lang"))
-    }
+    // if language info is in localStorage, get it and update state
+        if (localStorage.getItem("lang")){
+            setLang(localStorage.getItem("lang"))
+        }
   },[])
   
+  
+  // language change function gets triggered by LanguageChanger component
   const changeLang = (l) => {
    localStorage.setItem("lang", l)
     setLang(l)

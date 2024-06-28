@@ -5,33 +5,38 @@ import LanguageContext from "../../languageContext"
 
 
 const LanguageChanger = ({changeLang}) => {
-
     const lang = useContext(LanguageContext)
-
-    const setL = (lang)=>{
+    
+    // function used in onClick triggering the changeLang func in App.js
+    const setL = (lang)=> {
         changeLang(lang)
-    }
+        }
 
 
     if (lang == "ENG"){
         return (
             <div className="LanguageChanger">
                 <Button onClick={()=>setL("GER")}>
-                    Change to 🇩🇪
+                    GER
+                </Button>
+                <Button className="act" onClick={()=>setL("ENG")}>
+                   ENG
                 </Button>
             </div>
         )
-
     }
     else {
         return (
             <div className="LanguageChanger">
+                <Button className="act" onClick={()=>setL("GER")}>
+                    GER
+                </Button>
                 <Button onClick={()=>setL("ENG")}>
-                   Change to 🇬🇧
+                   ENG
                 </Button>
             </div>
         )
-}
+    }
 }
 
 export default LanguageChanger

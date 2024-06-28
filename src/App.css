@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../public/boliviainteligente-NTwbvxV7yPg-unsplash.jpg");
+  background: url("../public/boliviainteligente-unsplash.jpg");
   background-size: contain;
   height: 100vh;
-  
+
 }
 
 .App-logo {
